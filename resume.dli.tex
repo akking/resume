@@ -75,112 +75,96 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://www.linkedin.com/in/dongyanli//}{\Large Dongyan Li}} & Email : \href{mailto:lidongyan1988@gmail.com}{lidongyan1988@gmail.com}\\
-  \href{https://www.linkedin.com/in/dongyanli//}{https://www.linkedin.com/in/dongyanli/} & Mobile : +1-312-806-6031 \\
+  \textbf{{\Large Dongyan Li}} & Email : {lidongyan1988@gmail.com}\\
+  {https://www.linkedin.com/in/dongyanli/} & Mobile : +1-312-806-6031 \\
 \end{tabular*}
-
 
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {DePaul University}{Chicago, IL, U.S.}
-      {Master of Science in Computer Science;  GPA: 4.00}{Sep. 2014 – May. 2017}
+      {DePaul University}{Chicago, IL}
+      {Master of Science in Computer Science;  GPA: 4.00}{Sep. 2014 -- May. 2017}
     \resumeSubheading
-      {DePaul University}{Chicago, IL, U.S.}
-      {Master of Science in Accounting; GPA: 3.79}{Sep. 2012 – Sep. 2014}
+      {DePaul University}{Chicago, IL}
+      {Master of Science in Accounting;  GPA: 3.79}{Sep. 2012 -- Sep. 2014}
     \resumeSubheading
-      {Nanjing University}{Nanjing, Jiangsu, China}
-      {Bachelor of Arts in International Economics and Trade; GPA: 3.7}{Sep. 2007 – June. 2012}
+      {Nanjing University}{Nanjing, China}
+      {Bachelor of Arts in International Economics and Trade;  GPA: 3.7}{Sep. 2007 -- June. 2012}
   \resumeSubHeadingListEnd
 
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: C\#, Python, Java, C++, SQL, JavaScript, TypeScript, Scala}
+   }
+   \item{
+     \textbf{Tools and Frameworks}{: Apache Airflow, Apache Kafka, Docker, Apache Spark, Kubernetes, Angular, Envoy Proxy, Apache Camel, Jaeger Tracing, Flask, Spring Boot, Rancher, Helm}
+   }
+   \item{
+     \textbf{Datebase}{: Dremio, SQL Server, PostegreSQL, RocksDB, LevelDB}
+   }
+ \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {LivePerson Inc.}{Remote}
-      {Senior Software Development Engineer}{Mar 2022 - Current}
+  
+      \resumeSubheading
+      {Microsoft}{Redmond, WA}
+      {Software Engineer II}{May 2022 - Present}
+  
       \resumeItemListStart
-        \resumeItem{Workforce Management}
-          {Building new connectors to third party vendors.}
+      
+        \resumeItem{.NET Upgrade}
+          {Upgraded existing legacy .NET framework to .NET 6.0. Increased performance by 200\%. Enabled team members to use modern .NET features.}
+        \resumeItem{OpenTelemetry Integration}
+          {Added OpenTelemery feature to code base. Integrated with Execution Graph for end-to-end execution visualization. Greatly simplified debugging procedure}
+        \resumeItem{Production hotfix}
+          {Researched and resolved an .NET runtime bug that caused high number of exceptions. Decreased application latency by 5\%.}
+         
       \resumeItemListEnd
 
     \resumeSubheading
       {StoneX Group Inc.}{Chicago, IL}
-      {Senior Data Engineer}{Jan 2020 - Mar 2022}
+      {Senior Data Engineer}{Jan 2020 - Apr 2022}
+  
       \resumeItemListStart
         \resumeItem{Data Platform}
           {Created the entire data platform inside the team using Docker and Kubernetes; made all the back-office system data available through a single API service. Saved millions of dollar and greatly improved customer satisfaction.}
         \resumeItem{Performance Optimization}
           {Instrumented all the services and query engines with distributed tracing; analysed performance bottleneck; reduced 500ms response time for services.}
+        \resumeItem{Apache Airflow}
+          {Introduced, deployed and maintained Apache Airflow cluster; converted 20 pipelines into Airflow DAGs; reduced data delay and manual intervention by 50\% }
         \resumeItem{Real-time Feeder}
-          {Developed an application which feeds real-time trading data into an external risk evaluation system; achieved 100\% data coverage and 10 seconds max delay.}
-        \resumeItem{CI/CD}
-          {Wrapped up all test scripts, build and local development command for all the services into Gradle tasks; Converted Azure Pipelines to use Gradle to build and release. Improved developer efficiency and reduced onboarding time.}
-      \resumeItemListEnd
+          {Developed an application which feeds real-time trading data into an external risk evaluation system; achieved 100\% data coverage and 10 seconds max delay. }
+        \resumeItem{Web UI}
+          {Developed web application using Angular to showcase REST API service. Convinced 2 outside teams to use the API services }
 
-    \resumeSubheading
+         
+      \resumeItemListEnd
+      \resumeSubheading
       {StoneX Group Inc.}{Chicago, IL}
       {Data Engineer}{May 2017 - Jan 2020}
       \resumeItemListStart
         \resumeItem{Dremio}
-          {Deployed, maintained and optimized backbone data query engine Dremio; later migrated to Kubernetes environment; achieved 0 non-scheduled down time and ability to auto scale up and down.}
+          {Deployed, maintained and optimized backbone data query engine Dremio; later migrated to Kubernetes environment; achieved 0 non-scheduled down time and ability to auto scale up and down. }
         \resumeItem{API Service}
           {Developed OpenAPI REST API service using Python Flask on top of data query engine, used by 6 teams across the company.}
-        \resumeItem{Web UI}
-          {Developed web application using Angular to showcase REST API service. Convinced 2 outside teams to use the API services}
+        \resumeItem{Apache Kafka}
+          {Created and operated Apache Kafka cluster; refactored post-trade services to utilize Kafka; reduced time-to-analysis delay to 10 seconds.}
+        \resumeItem{CI/CD}
+          {Wrapped up all test scripts, build and local development command for all the services into Gradle tasks; Converted Azure Pipelines to use Gradle to build and release. Improved developer efficiency and reduced onboarding time.}
+
+
       \resumeItemListEnd
 
 
+
   \resumeSubHeadingListEnd
 
 
-%-----------PROJECTS-----------------
-\section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{QuantSoftware Toolkit}
-      {Open source python library for financial data analysis and machine learning for finance.}
-    \resumeSubItem{Github Visualization}
-      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
-    \resumeSubItem{Recommendation System}
-      {Music and Movie recommender systems using collaborative filtering on public datasets.}
-%     \resumeSubItem{Mac Setup}
-%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
-  \resumeSubHeadingListEnd
-
-%
-%--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
- \resumeSubHeadingListStart
-   \item{
-     \textbf{Languages}{: Python, Java, C++, SQL, JavaScript, Scala}
-   }
- \resumeSubHeadingListEnd
- 
- \resumeSubHeadingListStart
-   \item{
-     \textbf{Tools and Frameworks}{: Apache Airflow, Apache Kafka, Docker, Apache Spark, Kubernetes, Angular,
-Envoy Proxy, Apache Camel, Jaeger Tracing, Flask, Spring Boot, Rancher, Helm}
-   }
- \resumeSubHeadingListEnd
- 
-  \resumeSubHeadingListStart
-   \item{
-
-     \textbf{Datebase}{: Dremio, SQL Server, PostegreSQL, RocksDB, LevelDB
-}
-   }
- \resumeSubHeadingListEnd
- 
-   \resumeSubHeadingListStart
-   \item{
-     \textbf{Courses}{: Data Structures I II, Algorithm I II, Computer Systems I II, Distributed System, Optimized C++
-}
-
-   }
- \resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
